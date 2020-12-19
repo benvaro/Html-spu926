@@ -1,0 +1,71 @@
+/* 
+selector {
+    property: value;
+    ...
+    ...
+}
+*/
+
+/* *{
+    padding: 0;
+    margin: 0;
+} */
+@font-face {
+    font-family: 'Pacifico';
+    src: url('fonts/Pacifico-Regular.woff2') format('woff2'),
+         url('fonts/Pacifico-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body{
+    color: orange;
+}
+
+header{
+    color: rgb(137, 78, 192);
+}
+
+article header{
+    color: #55b11f;
+}
+
+p{
+    color: darkblue;
+    font-size: 20px;
+    word-spacing: 5px;
+    text-indent: 5%;
+    line-height: 2;
+}
+
+.one{
+    color: olive;
+}
+
+.shadow{
+    text-shadow: 4px -2px 5px rgb(0, 0, 0)
+}
+
+#main-section{
+    background-color: aquamarine;
+}
+
+h1{
+    /* left | right | justify */
+    text-align: center;
+    text-shadow: 1px -1px 0px rgb(0, 0, 0),
+    -1px 1px 0px rgb(0, 0, 0),
+    1px -1px 0px rgb(0, 0, 0);
+    /* color: white; */
+
+    font-size: 60px;
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: 5px;
+    font-family: 'Pacifico';
+    /* double | solid| wavy | dashed | dotted */
+    /* none | underline | overline | line-through */
+    text-decoration: double underline rgb(51, 51, 105);
+}
+

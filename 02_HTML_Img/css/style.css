@@ -1,0 +1,39 @@
+img{
+    width: 300px;
+}
+
+.img{
+    width: 50%;
+    /* border-radius: 20px 40px 30px 50%; */
+     border-radius: 20px 100px 50px; 
+
+     border-right: 10px double hsl(300, 100%, 50%);
+     border-left: 5px dashed rgb(136, 255, 0);
+     border-bottom: 12px dotted rgb(214, 92, 21);
+     border-top: 5px solid rgb(44, 31, 228);
+     box-shadow: 1px 4px 16px 1px rgb(0 0 0);
+
+     padding: 10px;
+     margin-left: 2%;
+     margin-bottom: 20px;
+     height: 100%;
+      float: right;
+}
+
+p{
+    text-align: justify;
+    
+    /* height: 200px;
+    overflow-y: scroll; */
+}
+
+.second, hr{
+    clear: right;
+}
+
+hr{
+    width: 50%;
+    height: 2px;
+    border: none;
+    background-color: green;
+}
