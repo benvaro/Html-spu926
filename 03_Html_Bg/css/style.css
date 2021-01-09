@@ -1,0 +1,118 @@
+p span{
+    color: pink;
+}
+
+body{
+    margin: 0;
+    /* background-color: cadetblue; */
+    /* background-image: url(../img/3.png), url(../img/4.png); */
+    /* background-repeat: no-repeat; */
+    /* background-size: 30%, 50%; */
+    /* background-position: top left, right bottom; */
+    /* background-image: url(../img/1.jfif);
+    background-attachment: scroll;
+    background-size: cover; */
+    /* height: 100vh; */
+
+    /* background: url(../img/1.jfif) no-repeat cover scroll; */
+}
+
+.with-img{
+    border: 10px solid violet;
+    padding: 20px;
+    background-image: url(../img/2.jpg);
+    color: rgb(141, 121, 121);
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 20px auto;
+    margin-top: 50px;
+    width: 50%;
+}
+
+.first{
+    list-style-type: circle;
+    /* inside */
+    list-style-position: outside;
+    /* list-style-image: url(../img/Martin-Berube-Flat-Animal-Bird.ico); */
+}
+
+.second{
+    list-style: upper-roman;
+    color: red;
+}
+
+.active {
+    color: white;
+    background-color: black;
+}
+
+.menu{
+    list-style: none;
+    max-width: 300px;
+    width: 100%;
+    padding: 0;
+    margin-left: 20px;
+    font-family: 'Yusei Magic',
+    sans-serif;
+}
+
+.menu li{
+    background-color: rgb(245, 185, 232);
+    padding-left: 20px;
+    height: 30px;
+    margin-bottom: 2px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05);
+    text-transform: uppercase;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+
+.menu li:first-child{
+    border-top-right-radius: 30px;
+}
+
+.menu li:last-child{
+    border-bottom-left-radius: 30px;
+}
+
+.menu li:hover{
+    cursor: pointer;
+    background-color: magenta;
+    color: white;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.menu i{
+    color: white;
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+.menu li:hover i{
+    color: black;
+}
+
+.custom-marker{
+    list-style: none;
+    counter-reset: counter2;
+}
+
+.custom-marker li{
+    counter-increment: counter2;
+}
+
+.custom-marker li::before{
+    content: counter(counter2, upper-roman) " -- ";
+    font-weight: bold;
+    color: olive;
+    font-size: 20px;
+}
+
+.sub-menu{
+    list-style: none;
+    display: none;
+}
+
+#sub:hover + .sub-menu{
+    display: block;
+}
