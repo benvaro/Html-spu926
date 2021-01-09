@@ -102,7 +102,7 @@ body{
 }
 
 .custom-marker li::before{
-    content: counter(counter2, upper-roman) " -- ";
+    content: counter(counter2, decimal) " * ";
     font-weight: bold;
     color: olive;
     font-size: 20px;
