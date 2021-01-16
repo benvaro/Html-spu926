@@ -106,8 +106,12 @@ console.log(surname);
 arr = [1, 2, 3];
 other = [4, 5, 6];
 
-// let [model, brand] = {}
-
+let obj = {
+    model: "Audi",
+    brand: "A6"
+}
+//let {model} = obj; // fixed
+//console.log(model)
 res = [...arr, ...other]; // spread operator
 console.log(res);
 
