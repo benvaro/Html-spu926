@@ -1,0 +1,36 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    height: 100px;
+    background-color: pink;
+}
+
+aside{
+    width: 25%;
+    background-color: green;
+    height: 400px;
+    float: left;
+}
+
+main{
+    background-color: purple;
+    height: 600px;
+    width: 55%;
+    float: left;
+}
+
+footer{
+    background-color: yellow;
+    height: 70px;
+    clear: both;
+}
+
+section{
+    background-color: red;
+    width: 20%;
+    height: 600px;
+    float: right;
+}
