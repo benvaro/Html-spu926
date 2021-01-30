@@ -1,0 +1,47 @@
+body {
+    background-color: green;
+    display: flex;
+    justify-content: center;
+}
+
+.square {
+    border: 2px solid black;
+    height: 50vh;
+    background-color: yellow;
+    width: 300px;
+}
+
+@media (min-width: 1024px) {}
+
+@media (max-width: 1023px) and (min-width: 768px) {
+    .square {
+        background-color: rgb(197, 78, 78);
+    }
+
+    body {
+        background-color: rgb(91, 91, 221);
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 420px) {
+    body {
+        background-color: orange;
+    }
+
+    .square:nth-child(2) {
+        display: none;
+    }
+}
+
+@media (min-width: 421px) and (max-width: 767px) {
+    body {
+        background-color: rgb(206, 73, 12);
+        flex-direction: column;
+    }
+
+    .square {
+        background-color: white;
+        width: 100%;
+    }
+}

@@ -1,0 +1,28 @@
+@mixin menu($color, $fontSize) {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    background-color: $color;
+    font-size: $fontSize;
+
+}
+
+@mixin references($color, $colorHover, $colorVisited) {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $color;
+
+    &:visited {
+        color: $colorVisited;
+    }
+
+    &:hover {
+        color: $colorHover;
+    }
+
+
+}
+
+@mixin padding($indent...) {
+    padding: $indent;
+}

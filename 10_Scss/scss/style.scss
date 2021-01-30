@@ -1,0 +1,35 @@
+@import 'variables';
+@import 'mixin';
+
+body{
+    background-color: $mainBg;
+    color: $textColor;
+}
+
+.one{
+    background-color: lightblue;
+
+    .two{
+        display: inline-block;
+        background-color: pink;
+        @include padding(10px 50px 30px 100px);
+    }
+
+    .two:nth-child(2){
+        background-color: red;
+    }
+}
+
+ul{
+    @include menu(#4bc84b, $fontSize);
+
+    li{
+        width: $width;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    a{
+        @include references($textColor, magenta, olive)
+    }
+}

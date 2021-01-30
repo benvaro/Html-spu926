@@ -1,0 +1,40 @@
+body {
+  background-color: #2334aa;
+  color: white;
+}
+
+.one {
+  background-color: lightblue;
+}
+.one .two {
+  display: inline-block;
+  background-color: pink;
+  padding: 10px 50px 30px 100px;
+}
+.one .two:nth-child(2) {
+  background-color: red;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  background-color: #4bc84b;
+  font-size: 26px;
+}
+ul li {
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+ul a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+}
+ul a:visited {
+  color: olive;
+}
+ul a:hover {
+  color: magenta;
+}
